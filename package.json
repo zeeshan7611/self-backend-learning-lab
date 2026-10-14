@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "build:tsc": "tsc && vite build",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
