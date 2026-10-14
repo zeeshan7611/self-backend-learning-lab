@@ -80,16 +80,21 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
         <div className="absolute right-0 top-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
         
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="space-y-2">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Intensive Practical Backend Launch</span>
+          <div className="space-y-2.5">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-semibold">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Beginner-Friendly Practical Backend Lab</span>
+              </span>
+              <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-semibold">
+                <span>Created by Zeeshan Ansari</span>
+              </span>
             </div>
             <h1 className="text-2xl md:text-3xl font-black tracking-tight text-white">
               Backend Launch Lab
             </h1>
             <p className="text-slate-300 text-sm md:text-base max-w-2xl leading-relaxed">
-              25 Days from CS Graduate to Practical Backend Developer. Built for Indian graduates to master real-world coding, write clean APIs, test defensively, and build a verified portfolio capstone.
+              25 Days from CS Graduate to Confident Backend Developer. Designed in simple, friendly English with real-life analogies so you never feel lost, confused, or intimidated by complex jargon.
             </p>
           </div>
 

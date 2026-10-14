@@ -136,14 +136,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
         })}
       </div>
 
-      {/* Footer Info */}
-      <div className="p-4 border-t border-slate-800 bg-slate-950/60 text-xs text-slate-400 space-y-2">
-        <div className="flex items-center space-x-2 text-indigo-400 font-medium">
-          <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-          <span>Curriculum Guarantee</span>
+      {/* Footer Info & Author Attribution */}
+      <div className="p-4 border-t border-slate-800 bg-slate-950/70 text-xs text-slate-400 space-y-2.5">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-1.5 text-indigo-400 font-semibold text-[11px]">
+            <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+            <span>Curriculum Creator</span>
+          </div>
+          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-400/30">
+            Author
+          </span>
+        </div>
+        <div className="text-slate-200 font-bold text-xs">
+          Zeeshan Ansari
         </div>
         <p className="text-[11px] text-slate-400 leading-relaxed">
-          Job readiness is demonstrated through project code and assessments, not merely checking days complete.
+          Crafted in friendly, simple English so every fresh graduate can truly understand backend engineering from scratch.
         </p>
       </div>
     </div>

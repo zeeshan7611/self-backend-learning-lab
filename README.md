@@ -1,6 +1,9 @@
 # Backend Launch Lab — 25 Days from CS Graduate to Practical Backend Developer
 
-> An interactive, responsive learning platform designed for CS graduates to rebuild practical programming fundamentals, master dual-language concepts (Java 21 + Python 3.12), specialize in modern backend frameworks (Spring Boot or FastAPI), and build a verified portfolio capstone project with automated tests.
+**Author & Creator**: **Zeeshan Ansari**  
+**Repository**: [https://github.com/zeeshan7611/self-backend-learning-lab](https://github.com/zeeshan7611/self-backend-learning-lab)
+
+> An interactive, beginner-friendly learning platform designed to help CS graduates rebuild programming confidence from scratch. Written in clear, simple English with real-life analogies, side-by-side Java 21 & Python 3.12 comparisons, and guided step-by-step framework implementations (Spring Boot & FastAPI).
 
 ---
 

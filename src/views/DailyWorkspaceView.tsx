@@ -231,40 +231,45 @@ export const DailyWorkspaceView: React.FC<DailyWorkspaceViewProps> = ({
 
       {/* Deep Concept Explanation Sections (Educational Content) */}
       <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs space-y-6">
-        <div className="border-b border-slate-100 pb-3">
-          <h2 className="text-base font-bold text-slate-900">
-            Concept Deep Dive & Architectural Mechanics
-          </h2>
-          <p className="text-xs text-slate-500">Why this concept is essential for real software and how interviewers test it.</p>
+        <div className="border-b border-slate-100 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h2 className="text-base font-bold text-slate-900">
+              Simple Concept Breakdown (Plain English)
+            </h2>
+            <p className="text-xs text-slate-500">Explained like a friendly senior mentor walking you through real backend code.</p>
+          </div>
+          <span className="text-[11px] font-semibold text-indigo-700 bg-indigo-50 border border-indigo-100 px-2.5 py-1 rounded-full self-start sm:self-center">
+            Guided by Zeeshan Ansari
+          </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-slate-800">
           <div className="space-y-4">
             <div className="space-y-1">
-              <h3 className="font-bold text-slate-900 text-sm">What is the concept?</h3>
+              <h3 className="font-bold text-slate-900 text-sm">💡 In simple words, what is this?</h3>
               <p className="leading-relaxed text-slate-600">{lesson.conceptExplanation.what}</p>
             </div>
 
             <div className="space-y-1">
-              <h3 className="font-bold text-slate-900 text-sm">Why is it needed in real software?</h3>
+              <h3 className="font-bold text-slate-900 text-sm">🤔 Why do companies actually care about this?</h3>
               <p className="leading-relaxed text-slate-600">{lesson.conceptExplanation.whyNeeded}</p>
             </div>
 
             <div className="space-y-1">
-              <h3 className="font-bold text-slate-900 text-sm">How does it work under the hood?</h3>
+              <h3 className="font-bold text-slate-900 text-sm">⚙️ What happens behind the scenes?</h3>
               <p className="leading-relaxed text-slate-600">{lesson.conceptExplanation.howItWorks}</p>
             </div>
           </div>
 
           <div className="space-y-4">
-            <div className="space-y-1.5 bg-amber-50/60 border border-amber-100 p-3.5 rounded-xl">
+            <div className="space-y-1.5 bg-amber-50/70 border border-amber-200/80 p-3.5 rounded-xl">
               <h3 className="font-bold text-amber-900 text-xs uppercase tracking-wider flex items-center space-x-1.5">
-                <span>Typical Beginner Mistakes</span>
+                <span>⚠️ Common Traps & Mistakes Beginners Make</span>
               </h3>
-              <ul className="space-y-1 text-slate-700">
+              <ul className="space-y-1.5 text-slate-700">
                 {lesson.conceptExplanation.beginnerMistakes.map((m, i) => (
-                  <li key={i} className="flex items-start space-x-1.5">
-                    <span className="text-amber-500 font-bold">•</span>
+                  <li key={i} className="flex items-start space-x-2">
+                    <span className="text-amber-600 font-bold">•</span>
                     <span className="leading-relaxed">{m}</span>
                   </li>
                 ))}
@@ -272,22 +277,22 @@ export const DailyWorkspaceView: React.FC<DailyWorkspaceViewProps> = ({
             </div>
 
             <div className="space-y-1">
-              <h3 className="font-bold text-slate-900 text-sm">How is it used in backend development?</h3>
+              <h3 className="font-bold text-slate-900 text-sm">🏢 Where will you write this on the job?</h3>
               <p className="leading-relaxed text-slate-600">{lesson.conceptExplanation.backendRelevance}</p>
             </div>
 
             <div className="space-y-1">
-              <h3 className="font-bold text-indigo-900 text-sm">How would an interviewer ask about it?</h3>
-              <p className="leading-relaxed text-indigo-950 font-medium">{lesson.conceptExplanation.interviewerPerspective}</p>
+              <h3 className="font-bold text-indigo-900 text-sm">🎯 How an interviewer will ask you about this:</h3>
+              <p className="leading-relaxed text-indigo-950 font-medium bg-indigo-50/60 p-2.5 rounded-lg border border-indigo-100">{lesson.conceptExplanation.interviewerPerspective}</p>
             </div>
           </div>
         </div>
 
         {/* Measurable Proof */}
         <div className="p-3.5 rounded-xl bg-slate-900 text-slate-200 text-xs flex items-start space-x-3">
-          <Sparkles className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
+          <Sparkles className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
           <div>
-            <span className="font-bold text-white">How to Prove You Understand This: </span>
+            <span className="font-bold text-white">How you can prove you actually get it: </span>
             <span className="text-slate-300">{lesson.conceptExplanation.howToProveUnderstanding}</span>
           </div>
         </div>

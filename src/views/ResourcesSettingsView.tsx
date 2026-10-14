@@ -89,13 +89,22 @@ export const ResourcesSettingsView: React.FC<ResourcesSettingsViewProps> = ({
   return (
     <div className="space-y-8 max-w-5xl mx-auto pb-16">
       {/* Header */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-xs space-y-2">
-        <h1 className="text-2xl font-bold text-slate-900 tracking-tight">
-          Learning Resources & Platform Settings
-        </h1>
-        <p className="text-xs md:text-sm text-slate-500">
-          All verified free documentation links, schedule configuration, and local storage data management.
-        </p>
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-xs space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">
+              Learning Resources & Platform Settings
+            </h1>
+            <p className="text-xs md:text-sm text-slate-500 mt-1">
+              Curated official documentation, schedule adjustments, and local progress backup.
+            </p>
+          </div>
+          <div className="p-3 bg-indigo-50 border border-indigo-100 rounded-xl text-xs space-y-1 self-start sm:self-center">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-indigo-500">Course Creator & Author</div>
+            <div className="font-extrabold text-indigo-950 text-sm">Zeeshan Ansari</div>
+            <div className="text-[11px] text-indigo-800">Dedicated to simplifying backend engineering for beginners.</div>
+          </div>
+        </div>
       </div>
 
       {/* Curated Resources Directory */}
