@@ -11,17 +11,27 @@ import { JobTrackerView } from './views/JobTrackerView';
 import { ResourcesSettingsView } from './views/ResourcesSettingsView';
 import { UserProgressState } from './types';
 import { getInitialState, saveState } from './utils/storage';
+import { GuidedTourModal } from './components/GuidedTourModal';
 import { Menu, Sparkles } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [state, setState] = useState<UserProgressState>(getInitialState);
   const [currentTab, setCurrentTab] = useState<string>('dashboard');
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const [isTourOpen, setIsTourOpen] = useState<boolean>(() => {
+    // Show automatically on first visit if user hasn't seen it yet
+    return !localStorage.getItem('backend_lab_tour_completed');
+  });
 
   // Sync state changes to localStorage
   useEffect(() => {
     saveState(state);
   }, [state]);
+
+  const handleCloseTour = () => {
+    setIsTourOpen(false);
+    localStorage.setItem('backend_lab_tour_completed', 'true');
+  };
 
   const handleUpdateState = (patch: Partial<UserProgressState>) => {
     setState(prev => ({ ...prev, ...patch }));
@@ -41,6 +51,13 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col lg:flex-row text-slate-900 font-sans">
+      {/* Interactive Guided Tour Modal */}
+      <GuidedTourModal
+        isOpen={isTourOpen}
+        onClose={handleCloseTour}
+        onNavigateTab={(tab) => setCurrentTab(tab)}
+      />
+
       {/* Responsive Sidebar */}
       <Sidebar
         currentTab={currentTab}
@@ -51,6 +68,7 @@ export const App: React.FC = () => {
         state={state}
         mobileOpen={mobileMenuOpen}
         setMobileOpen={setMobileMenuOpen}
+        onOpenTour={() => setIsTourOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -84,6 +102,7 @@ export const App: React.FC = () => {
               onUpdateState={handleUpdateState}
               onNavigateToDay={handleNavigateToDay}
               onSelectTab={setCurrentTab}
+              onOpenTour={() => setIsTourOpen(true)}
             />
           )}
 

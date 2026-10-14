@@ -24,6 +24,7 @@ interface SidebarProps {
   state: UserProgressState;
   mobileOpen: boolean;
   setMobileOpen: (open: boolean) => void;
+  onOpenTour: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -31,7 +32,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onSelectTab,
   state,
   mobileOpen,
-  setMobileOpen
+  setMobileOpen,
+  onOpenTour
 }) => {
   const completedCount = state.completedDays.length;
   const progressPercent = Math.round((completedCount / 25) * 100);
@@ -52,23 +54,34 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const content = (
     <div className="flex flex-col h-full bg-slate-900 text-slate-100 select-none">
       {/* Brand Header */}
-      <div className="p-5 border-b border-slate-800 flex items-center justify-between">
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-500/20 text-white font-black text-xl">
-            B
+      <div className="p-4 border-b border-slate-800 space-y-3">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-3">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-500/20 text-white font-black text-lg">
+              B
+            </div>
+            <div>
+              <h1 className="font-bold text-sm leading-tight tracking-tight text-white flex items-center space-x-1.5">
+                <span>Backend Launch Lab</span>
+              </h1>
+              <p className="text-[11px] text-slate-400">by Zeeshan Ansari</p>
+            </div>
           </div>
-          <div>
-            <h1 className="font-bold text-base leading-tight tracking-tight text-white flex items-center space-x-1.5">
-              <span>Backend Launch Lab</span>
-            </h1>
-            <p className="text-xs text-slate-400">25 Days to Practical Backend</p>
-          </div>
+          <button 
+            onClick={() => setMobileOpen(false)} 
+            className="lg:hidden p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+          >
+            <X className="w-5 h-5" />
+          </button>
         </div>
-        <button 
-          onClick={() => setMobileOpen(false)} 
-          className="lg:hidden p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+
+        {/* Guided Tour Launcher Button */}
+        <button
+          onClick={onOpenTour}
+          className="w-full py-2 px-3 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/50 border border-indigo-500/40 text-indigo-200 text-xs font-semibold flex items-center justify-center space-x-2 transition-all shadow-xs"
         >
-          <X className="w-5 h-5" />
+          <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+          <span>How It Works? (Guided Tour)</span>
         </button>
       </div>
 

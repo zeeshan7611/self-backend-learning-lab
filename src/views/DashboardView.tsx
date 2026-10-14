@@ -24,13 +24,15 @@ interface DashboardViewProps {
   onUpdateState: (newState: Partial<UserProgressState>) => void;
   onNavigateToDay: (day: number) => void;
   onSelectTab: (tab: string) => void;
+  onOpenTour?: () => void;
 }
 
 export const DashboardView: React.FC<DashboardViewProps> = ({
   state,
   onUpdateState,
   onNavigateToDay,
-  onSelectTab
+  onSelectTab,
+  onOpenTour
 }) => {
   const [dailyNoteInput, setDailyNoteInput] = useState(state.dailyNotes[state.currentDay] || '');
   const [isSavedNote, setIsSavedNote] = useState(false);
@@ -99,6 +101,15 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            {onOpenTour && (
+              <button
+                onClick={onOpenTour}
+                className="px-4 py-3 rounded-xl bg-indigo-500/20 hover:bg-indigo-500/30 border border-indigo-400/40 text-indigo-200 font-semibold text-xs flex items-center justify-center space-x-2 transition-all shadow-xs"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-indigo-300" />
+                <span>Quick Tour</span>
+              </button>
+            )}
             <button
               onClick={() => onSelectTab('workspace')}
               className="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/30 flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5"
