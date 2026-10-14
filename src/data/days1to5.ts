@@ -163,6 +163,13 @@ public class UserGreeting {
     ],
     reflectionPrompt: "Why is command-line fluency and understanding compilation mechanics essential for a backend developer instead of relying 100% on IDE shortcut buttons?",
     measurableCriteria: "Learner can navigate directories via terminal, compile and run Java & Python scripts with arguments, and push cleanly to GitHub without IDE assistance.",
+    videoTutorial: {
+      title: "Git & GitHub Complete Practical Course for Beginners",
+      embedId: "RGOj5yH7evk",
+      channel: "freeCodeCamp",
+      duration: "1 hour 8 mins",
+      takeaway: "Master terminal commands, staging, commits, and pushing to remote repositories without fear."
+    },
     resources: [
       {
         title: "Official Java Getting Started Documentation",

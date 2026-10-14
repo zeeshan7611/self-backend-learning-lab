@@ -220,6 +220,13 @@ class SavingsAccount extends BankAccount {
     ],
     reflectionPrompt: "Why does relying on concrete classes rather than interfaces make writing unit tests nearly impossible when external services (like payment gateways or databases) are involved?",
     measurableCriteria: "Learner can design a modular domain model using encapsulation, interfaces, and composition, demonstrating polymorphism without type checking anti-patterns.",
+    videoTutorial: {
+      title: "Object Oriented Programming (OOP) in 20 Minutes",
+      embedId: "pTB0EiLXUC8",
+      channel: "Programming with Mosh",
+      duration: "20 mins",
+      takeaway: "Understand Encapsulation, Abstraction, Inheritance, and Polymorphism using simple real-world examples."
+    },
     resources: [
       {
         title: "Dev.java: Object-Oriented Programming Concepts",

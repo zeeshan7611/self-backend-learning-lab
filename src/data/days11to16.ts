@@ -168,6 +168,13 @@ ORDER BY application_count DESC;`
     ],
     reflectionPrompt: "Why is a well-designed database schema the hardest part of an application to change once millions of users have populated it with real data?",
     measurableCriteria: "Learner can design a 3NF relational schema, write multi-table joins with aggregations, and explain ACID guarantees and indexing trade-offs.",
+    videoTutorial: {
+      title: "SQL and Databases Full Course for Beginners",
+      embedId: "HXV3zeRR3h4",
+      channel: "freeCodeCamp",
+      duration: "4 hours (Watch Chapters 1–3: Tables, Joins & Keys)",
+      takeaway: "See how tables connect with Primary and Foreign Keys, and visualize how INNER and LEFT JOINs merge data."
+    },
     resources: [
       {
         title: "SQLBolt — Learn SQL Interactively",

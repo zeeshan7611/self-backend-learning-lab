@@ -17,7 +17,9 @@ import {
   Flame,
   FileQuestion,
   Sparkles,
-  MessageSquare
+  MessageSquare,
+  Video,
+  Play
 } from 'lucide-react';
 import { UserProgressState, DayLesson } from '../types';
 import { getLessonByDay, ALL_LESSONS } from '../data/curriculum';
@@ -595,6 +597,49 @@ export const DailyWorkspaceView: React.FC<DailyWorkspaceViewProps> = ({
           ))}
         </div>
       </div>
+
+      {/* Embedded YouTube Video Tutorial Player */}
+      {lesson.videoTutorial && (
+        <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs space-y-4 p-5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 rounded-lg bg-rose-600 text-white flex items-center justify-center shadow-xs">
+                <Video className="w-4 h-4 text-white" />
+              </div>
+              <div>
+                <h3 className="text-sm font-bold text-slate-900 leading-tight">
+                  Visual Video Masterclass: {lesson.videoTutorial.title}
+                </h3>
+                <p className="text-[11px] text-slate-500">
+                  By {lesson.videoTutorial.channel} • {lesson.videoTutorial.duration} • Watch directly here without leaving your lab
+                </p>
+              </div>
+            </div>
+            <span className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200 self-start sm:self-center">
+              Curated Video
+            </span>
+          </div>
+
+          {/* Embedded YouTube Responsive iFrame */}
+          <div className="relative w-full rounded-xl overflow-hidden bg-slate-950 aspect-video shadow-md border border-slate-800">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={`https://www.youtube-nocookie.com/embed/${lesson.videoTutorial.embedId}`}
+              title={lesson.videoTutorial.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+
+          <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 text-xs text-slate-700 leading-relaxed flex items-start space-x-2">
+            <Play className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
+            <div>
+              <strong className="text-slate-900">What to focus on in this video: </strong>
+              <span>{lesson.videoTutorial.takeaway}</span>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Official Verified Resources */}
       <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-xs space-y-3">

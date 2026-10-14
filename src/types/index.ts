@@ -67,6 +67,13 @@ export interface DayLesson {
   }[];
   reflectionPrompt: string;
   measurableCriteria: string;
+  videoTutorial?: {
+    title: string;
+    embedId: string;
+    channel: string;
+    duration: string;
+    takeaway: string;
+  };
   resources: {
     title: string;
     purpose: string;
