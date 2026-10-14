@@ -196,6 +196,13 @@ public ResponseEntity<Application> get(@PathVariable Long id) {
     ],
     reflectionPrompt: "Why does having consistent, structured error responses make frontend engineering teams love working with your backend APIs?",
     measurableCriteria: "Learner can implement declarative request validation, centralized error handling, and safe pagination with verified error schemas.",
+    videoTutorial: {
+      title: "Data Validation & Exception Handling in Spring Boot (Hindi)",
+      embedId: "FaRgEy1ncZg",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "25 mins",
+      takeaway: "Bean Validation (@Valid, @NotNull), Global Exception Handler (@RestControllerAdvice) aur RFC standard error formatting."
+    },
     resources: [
       {
         title: "Spring Guides: Validating Form Input",
@@ -418,6 +425,13 @@ def test_2_delete():
     ],
     reflectionPrompt: "How does writing automated tests actually make you code faster rather than slower over the course of a project?",
     measurableCriteria: "Learner can write isolated unit tests with mocks, integration tests against API endpoints, and maintain zero order-dependent test failures.",
+    videoTutorial: {
+      title: "JUnit Testing & Mockito in Spring Boot (Hindi)",
+      embedId: "n1xX8u76wLY",
+      channel: "Engineering Digest (Hindi)",
+      duration: "25 mins",
+      takeaway: "JUnit 5 annotations (@Test, @ParameterizedTest), Mockito mocking, aur isolated unit testing step-by-step Hindi me."
+    },
     resources: [
       {
         title: "Spring Guides: Testing the Web Layer",
@@ -613,6 +627,13 @@ stmt.setString(1, userEmailInput); // Handled strictly as data literal, never ex
     ],
     reflectionPrompt: "Why should you never attempt to 'invent your own encryption' or use plain SHA-256 for passwords when battle-tested libraries like BCrypt and Argon2 exist?",
     measurableCriteria: "Learner can implement BCrypt password hashing, sign and verify JWT tokens with expiration, and protect routes against unauthenticated access.",
+    videoTutorial: {
+      title: "Complete JWT Authentication with Spring Boot 3 in One Video (Hindi)",
+      embedId: "WBjYn0q8l38",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "35 mins",
+      takeaway: "BCrypt password hashing, JWT token creation, filters, aur endpoint security configuration Hindi me."
+    },
     resources: [
       {
         title: "Spring Security Architecture Reference",
@@ -815,8 +836,15 @@ public ResponseEntity<?> login(@RequestBody LoginRequest req) {
         tips: "Reciting these exact points shows you think like a professional engineer who builds software for teams, not just for a college assignment."
       }
     ],
-    reflectionPrompt: "How does having structured JSON logs and correlation IDs transform a panicked production incident into a systematic, calm 5-minute debugging exercise?",
+    reflectionPrompt: "How does structured logging and correlation IDs transform a panicked production incident into a systematic, calm 5-minute debugging exercise?",
     measurableCriteria: "Learner can configure structured logging, track requests via correlation IDs, prevent sensitive data leaks, and maintain semantic Git commit standards.",
+    videoTutorial: {
+      title: "Logging in Spring Boot: Complete Guide in Hindi",
+      embedId: "FaRgEy1ncZg",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "20 mins",
+      takeaway: "SLF4J, Logback, log levels (INFO, DEBUG, ERROR), aur production environment me structured logging setup."
+    },
     resources: [
       {
         title: "Baeldung: Introduction to SLF4J and Logback",
@@ -1009,6 +1037,13 @@ DELETE FROM users WHERE id = 1; -- Fails with ForeignKeyViolationException!`,
     ],
     reflectionPrompt: "How does having a crystal-clear blueprint make the actual coding phase smooth, structured, and enjoyable rather than stressful and chaotic?",
     measurableCriteria: "Learner produces a complete Software Design Document including ER diagram, API matrix, validation constraints, and an actionable 3-day sprint plan.",
+    videoTutorial: {
+      title: "Backend Project Architecture & Database Design in Hindi",
+      embedId: "HJqNw9nQdf-R",
+      channel: "Anuj Bhaiya (Hindi)",
+      duration: "25 mins",
+      takeaway: "Real-world backend project kaise design karte hain: Database schema, ER diagram, REST API contracts aur folder structure."
+    },
     resources: [
       {
         title: "PostgreSQL: Table Basics and Constraints",

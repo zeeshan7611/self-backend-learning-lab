@@ -221,11 +221,11 @@ class SavingsAccount extends BankAccount {
     reflectionPrompt: "Why does relying on concrete classes rather than interfaces make writing unit tests nearly impossible when external services (like payment gateways or databases) are involved?",
     measurableCriteria: "Learner can design a modular domain model using encapsulation, interfaces, and composition, demonstrating polymorphism without type checking anti-patterns.",
     videoTutorial: {
-      title: "Object Oriented Programming (OOP) in 20 Minutes",
-      embedId: "pTB0EiLXUC8",
-      channel: "Programming with Mosh",
-      duration: "20 mins",
-      takeaway: "Understand Encapsulation, Abstraction, Inheritance, and Polymorphism using simple real-world examples."
+      title: "Object-Oriented Programming (OOP) in One Shot (Hindi)",
+      embedId: "yRpLlJmRo2w",
+      channel: "Apna College (Hindi)",
+      duration: "30 mins",
+      takeaway: "Encapsulation, Inheritance, Abstraction, aur Polymorphism ko real-world Java examples ke sath Hindi me master karein."
     },
     resources: [
       {
@@ -442,6 +442,13 @@ System.out.println(m.get(new Customer(1))); // Prints null! Why?`,
     ],
     reflectionPrompt: "How does understanding hash buckets and time complexity prevent you from accidentally writing code that works fine with 10 users but crashes the server with 10,000 users?",
     measurableCriteria: "Learner can articulate HashMap bucket mechanics, implement the hash contract, choose between Set/Map/List appropriately, and achieve >80% on the Week 1 assessment.",
+    videoTutorial: {
+      title: "Java Collections Framework & ArrayList in Hindi",
+      embedId: "qMePCtjeqB4",
+      channel: "CodeWithHarry (Hindi)",
+      duration: "20 mins",
+      takeaway: "ArrayList, Set, Map aur Collection Hierarchy ka visual walk-through Hindi me samjhein."
+    },
     resources: [
       {
         title: "Dev.java: The Java Collections Framework",
@@ -654,6 +661,13 @@ if __name__ == "__main__":
     ],
     reflectionPrompt: "How does clean exception handling turn a terrifying 500 Internal Server Error crash into a predictable, helpful HTTP 400 Bad Request error for your API consumers?",
     measurableCriteria: "Learner can safely manage resources using context managers, write custom domain exceptions, and avoid resource leaks or silent exception swallowing.",
+    videoTutorial: {
+      title: "Try Catch Block & Exception Handling in Java (Hindi)",
+      embedId: "bMhDwdT5AHw",
+      channel: "CodeWithHarry (Hindi)",
+      duration: "18 mins",
+      takeaway: "Exceptions kaise throw aur catch kiye jaate hain, runtime error crashes ko gracefully handle karne ka tarika."
+    },
     resources: [
       {
         title: "Dev.java: Exceptions & Try-with-Resources",
@@ -879,6 +893,13 @@ if __name__ == "__main__":
     ],
     reflectionPrompt: "If an API endpoint executes an O(N^2) algorithm over a customer's order history, what happens to server CPU utilization and API latency when a customer with 10,000 orders accesses the endpoint?",
     measurableCriteria: "Learner can analyze time/space complexity, implement Two-Sum and Binary Search without assistance, and explain real-world backend applications.",
+    videoTutorial: {
+      title: "Asymptotic Notations & Big O Time Complexity (Hindi)",
+      embedId: "R39aEztu_jI",
+      channel: "Gate Smashers (Hindi)",
+      duration: "15 mins",
+      takeaway: "Big-O, Big-Omega, Theta notations aur loop iterations ka time complexity intuition crystal clear Hindi me."
+    },
     resources: [
       {
         title: "Dev.java: Arrays and Algorithms",
@@ -1047,6 +1068,13 @@ if __name__ == "__main__":
     ],
     reflectionPrompt: "Now that you have written both Java and Python for 10 days, which language feels more natural to you? Why is sticking with that choice for the next 15 days the fastest path to building a credible portfolio project?",
     measurableCriteria: "Learner evaluates their assessment performance, articulates architectural trade-offs, and commits to a primary backend specialization with verified workspace readiness.",
+    videoTutorial: {
+      title: "Java vs Python: Which Backend Language Should You Choose? (Hindi)",
+      embedId: "QjwtW7GHjcY",
+      channel: "CodeWithHarry (Hindi)",
+      duration: "15 mins",
+      takeaway: "Placements, enterprise jobs, syntax difference aur learning curve ke hisaab se Java vs Python choose karein."
+    },
     resources: [
       {
         title: "Official Spring Boot Documentation",

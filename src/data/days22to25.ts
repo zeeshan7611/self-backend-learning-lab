@@ -212,6 +212,13 @@ public class ApplicationService {
     ],
     reflectionPrompt: "How does building the foundational entities cleanly on Day 1 make adding advanced features (like search, pagination, and auth) on Days 2 and 3 almost effortless?",
     measurableCriteria: "Learner delivers verified working entities, database persistence, and base CRUD endpoints for the Capstone project.",
+    videoTutorial: {
+      title: "Building REST API & Database Entities in Hindi",
+      embedId: "V2p5rVIBT5M",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "30 mins",
+      takeaway: "Entities banayein, Spring Data JPA repository implement karein aur base CRUD endpoints ko live run karein."
+    },
     resources: [
       {
         title: "Spring Data JPA Reference: Repositories",
@@ -435,6 +442,13 @@ public DashboardMetrics getMetrics() {
     ],
     reflectionPrompt: "How does having a comprehensive automated test suite give you complete fearlessness when refactoring code or upgrading dependencies?",
     measurableCriteria: "Learner hardens the Capstone API with validation, SQL-level metrics aggregation, search filtering, and passes an automated test suite.",
+    videoTutorial: {
+      title: "Spring Boot Testing & Mockito Mastery (Hindi)",
+      embedId: "n1xX8u76wLY",
+      channel: "Engineering Digest (Hindi)",
+      duration: "25 mins",
+      takeaway: "MockMvc ke sath integration testing, exception handling test cases aur test driven approach Hindi me."
+    },
     resources: [
       {
         title: "Spring Data JPA: Derived Query Methods",
@@ -650,6 +664,13 @@ If you get database errors, make sure you have the database named 'testdb' set u
     ],
     reflectionPrompt: "How does having an honest, articulate explanation of your project give you 10x more confidence during technical interviews than trying to memorize answers to 100 trivia questions?",
     measurableCriteria: "Learner packages a complete GitHub repository with exemplary README, truthful resume, working Swagger docs, and rehearsed 3-minute walkthrough.",
+    videoTutorial: {
+      title: "How to Make a Software Engineer Resume That Gets Shortlisted (Hindi)",
+      embedId: "GK1zWXqRWck",
+      channel: "Anuj Bhaiya (Hindi)",
+      duration: "20 mins",
+      takeaway: "Freshers ke liye honest, high-impact ATS friendly resume, project description formatting aur key skills presentation."
+    },
     resources: [
       {
         title: "GitHub: About READMEs and Best Practices",
@@ -833,6 +854,13 @@ if __name__ == "__main__":
     ],
     reflectionPrompt: "Look back at Day 1 when you were compiling Hello World from the command line. How far have you traveled in 25 focused days, and what does that prove about what you can achieve over the next 5 years?",
     measurableCriteria: "Learner completes the comprehensive final assessment, benchmarks their work against the job-readiness rubric, and establishes an active 60-day deliberate practice roadmap.",
+    videoTutorial: {
+      title: "Backend Developer Roadmap & Interview Success Strategy (Hindi)",
+      embedId: "HJqNw9nQdf-R",
+      channel: "Anuj Bhaiya (Hindi)",
+      duration: "25 mins",
+      takeaway: "25 dino ke baad ka 60-day roadmap: Next steps, mock interviews, system design basics, aur placement strategy in Hindi."
+    },
     resources: [
       {
         title: "Docker Official Get Started Tutorial",

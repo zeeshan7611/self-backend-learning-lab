@@ -169,11 +169,11 @@ ORDER BY application_count DESC;`
     reflectionPrompt: "Why is a well-designed database schema the hardest part of an application to change once millions of users have populated it with real data?",
     measurableCriteria: "Learner can design a 3NF relational schema, write multi-table joins with aggregations, and explain ACID guarantees and indexing trade-offs.",
     videoTutorial: {
-      title: "SQL and Databases Full Course for Beginners",
-      embedId: "HXV3zeRR3h4",
-      channel: "freeCodeCamp",
-      duration: "4 hours (Watch Chapters 1–3: Tables, Joins & Keys)",
-      takeaway: "See how tables connect with Primary and Foreign Keys, and visualize how INNER and LEFT JOINs merge data."
+      title: "SQL One Shot in Hindi: Complete SQL Course for Beginners",
+      embedId: "hlGoQC332VM",
+      channel: "Apna College (Hindi)",
+      duration: "3 hours (Key chapters: Tables, Primary/Foreign Keys, Joins)",
+      takeaway: "Ek hi video me tables, primary & foreign keys, aur INNER / LEFT JOINs ka visual practical demo Hindi me samjhein."
     },
     resources: [
       {
@@ -364,6 +364,13 @@ Content-Type: application/json
     ],
     reflectionPrompt: "Why does returning a generic 200 OK with an error message in the JSON body cause headaches for mobile developers and break automated API monitoring tools?",
     measurableCriteria: "Learner can design RESTful endpoints adhering to REST conventions, map correct HTTP status codes, and test endpoints via command line cURL.",
+    videoTutorial: {
+      title: "What is REST API & HTTP Methods Explained in Hindi",
+      embedId: "l_u9UX576sQ",
+      channel: "Thapa Technical (Hindi)",
+      duration: "18 mins",
+      takeaway: "Client-server architecture, GET/POST/PUT/DELETE methods, headers aur JSON response format Hindi me visually samjhein."
+    },
     resources: [
       {
         title: "Mozilla MDN: HTTP Request Methods & Status Codes",
@@ -557,6 +564,13 @@ server.port=8081
     ],
     reflectionPrompt: "Why is having automatic interactive API documentation (Swagger/OpenAPI) a game-changer for collaborating with frontend React/Mobile engineers?",
     measurableCriteria: "Learner can bootstrap a project from scratch, launch the local server, handle network port conflicts, and implement working JSON endpoints with OpenAPI documentation.",
+    videoTutorial: {
+      title: "Spring Boot & REST API Tutorial in Hindi",
+      embedId: "729Pd-ZQ4uA",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "25 mins",
+      takeaway: "Spring Boot architecture, Controller annotations (@RestController, @GetMapping) aur embedded Tomcat server execution."
+    },
     resources: [
       {
         title: "Spring Boot: Building a RESTful Web Service",
@@ -798,6 +812,13 @@ public ResponseEntity<Application> create(@RequestBody Application app) {
     ],
     reflectionPrompt: "Why does separating your API into clean DTOs protect your database from breaking when frontend developers request field renaming or formatting changes?",
     measurableCriteria: "Learner can implement all 5 CRUD operations, map correct status codes, extract path/query variables, and enforce DTO separation.",
+    videoTutorial: {
+      title: "Creating REST API & CRUD Operations in One Video (Hindi)",
+      embedId: "V2p5rVIBT5M",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "35 mins",
+      takeaway: "POST, GET, PUT, DELETE mapping, DTO separation aur status codes ka practical live implementation."
+    },
     resources: [
       {
         title: "Dev.java: Records & Data Transfer Objects",
@@ -1048,6 +1069,13 @@ public class UserService {
     ],
     reflectionPrompt: "If your CEO asks to add a scheduled cron job or Slack bot that uses the same application processing logic, how does having a clean Service layer save you from rewriting code?",
     measurableCriteria: "Learner can refactor a monolithic endpoint into thin controller, pure business service, and dedicated repository with clean constructor injection.",
+    videoTutorial: {
+      title: "Controller, Service & Repository Layered Architecture in Hindi",
+      embedId: "V2p5rVIBT5M",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "25 mins",
+      takeaway: "Controller, Service aur DAO/Repository pattern ko separate karke enterprise layered architecture kaise banate hain."
+    },
     resources: [
       {
         title: "Spring Guides: Serving Web Content with Spring MVC",
@@ -1250,6 +1278,13 @@ spring.datasource.password=\${DB_PASSWORD:}
     ],
     reflectionPrompt: "How does moving from in-memory arrays to a real persistent PostgreSQL database fundamentally change how you think about testing and database state management?",
     measurableCriteria: "Learner can configure a persistent database connection securely via environment variables, map relational entities, and execute durable CRUD operations.",
+    videoTutorial: {
+      title: "Hibernate Crash Course & Spring Data JPA in Hindi",
+      embedId: "FaRgEy1ncZg",
+      channel: "Learn Code With Durgesh (Hindi)",
+      duration: "30 mins",
+      takeaway: "Entities (@Entity, @Id), ORM mapping, connection pooling aur PostgreSQL database ke sath durable CRUD operations."
+    },
     resources: [
       {
         title: "Spring Guides: Accessing Data with JPA",

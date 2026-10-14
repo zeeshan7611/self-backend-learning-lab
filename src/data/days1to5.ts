@@ -164,11 +164,11 @@ public class UserGreeting {
     reflectionPrompt: "Why is command-line fluency and understanding compilation mechanics essential for a backend developer instead of relying 100% on IDE shortcut buttons?",
     measurableCriteria: "Learner can navigate directories via terminal, compile and run Java & Python scripts with arguments, and push cleanly to GitHub without IDE assistance.",
     videoTutorial: {
-      title: "Git & GitHub Complete Practical Course for Beginners",
-      embedId: "RGOj5yH7evk",
-      channel: "freeCodeCamp",
-      duration: "1 hour 8 mins",
-      takeaway: "Master terminal commands, staging, commits, and pushing to remote repositories without fear."
+      title: "Git Explained in 5 Minutes with Real-Life Example (Hindi)",
+      embedId: "xVD1Zj1ge_g",
+      channel: "5 Minutes Engineering (Hindi)",
+      duration: "5 mins",
+      takeaway: "Ekdum aasan Hindi me samjhein: Git commit, staging area, aur repository kya hota hai real life example ke sath."
     },
     resources: [
       {
@@ -370,6 +370,13 @@ if (role1.equals(role2)) {
     ],
     reflectionPrompt: "How does static type checking save companies thousands of dollars in production compared to dynamic typing, and what are Python type hints doing to bridge this gap?",
     measurableCriteria: "Learner can accurately predict memory behavior, differentiate reference vs value equality, and write safe input-parsing routines with exception handling in both languages.",
+    videoTutorial: {
+      title: "Variables, Data Types & Memory Allocation in Java (Hindi)",
+      embedId: "LusTv0RlnSU",
+      channel: "Apna College (Hindi)",
+      duration: "18 mins",
+      takeaway: "Pragmatic Hindi explanation: Stack memory vs Heap memory, primitive types, and variable references kaise work karte hain."
+    },
     resources: [
       {
         title: "Dev.java: Data Types & Variables",
@@ -580,6 +587,13 @@ while count < 10:
     ],
     reflectionPrompt: "Look at any old college assignment code you wrote. How many nested if-else blocks were there, and how would guard clauses make it look like professional production code?",
     measurableCriteria: "Learner can refactor complex conditional code into clean guard clauses and implement iterative algorithms with verified edge cases.",
+    videoTutorial: {
+      title: "Loops & Conditions in Java Explained in Hindi",
+      embedId: "0r1SfRoLuzU",
+      channel: "Apna College (Hindi)",
+      duration: "25 mins",
+      takeaway: "For loops, while loops, nested loop patterns, aur condition evaluation flow ko visuals ke sath samjhein."
+    },
     resources: [
       {
         title: "Dev.java: Control Flow Statements",
@@ -774,6 +788,13 @@ print(add_user("Bob"))   # ['Bob']`
     ],
     reflectionPrompt: "Why is interactive breakpoint debugging 10x faster than writing twenty 'print' statements, especially when tracing an intermittent bug across multiple service files?",
     measurableCriteria: "Learner can accurately predict parameter mutation behavior, explain call stack mechanics, and diagnose issues with a debugger instead of print statements.",
+    videoTutorial: {
+      title: "Methods & Functions in Java Explained in Hindi",
+      embedId: "QjwtW7GHjcY",
+      channel: "CodeWithHarry (Hindi)",
+      duration: "16 mins",
+      takeaway: "Methods declare kaise karte hain, arguments pass by value kaise kaam karte hain aur return types ka practical demo."
+    },
     resources: [
       {
         title: "Dev.java: Defining Methods",
@@ -982,6 +1003,13 @@ if __name__ == "__main__":
     ],
     reflectionPrompt: "How many times in production code do backend APIs crash with OutOfMemory errors simply because an engineer built a large report with string concatenation instead of streaming or StringBuilder?",
     measurableCriteria: "Learner can demonstrate two-pointer traversal, explain string memory pooling, and eliminate quadratic string concatenation in loops.",
+    videoTutorial: {
+      title: "Strings in Java: Memory, Pool & Immutability (Hindi)",
+      embedId: "yRpLlJmRo2w",
+      channel: "Apna College (Hindi)",
+      duration: "22 mins",
+      takeaway: "Strings immutable kyun hoti hain, String Constant Pool kya hota hai aur StringBuilder vs String concatenation ka difference."
+    },
     resources: [
       {
         title: "Dev.java: Numbers and Strings",
